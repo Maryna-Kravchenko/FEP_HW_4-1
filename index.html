@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    const forFirstNumber = Number(prompt('Введите число'));
+    const firstNumber = (isNaN(forFirstNumber)) ? Number(prompt('Введите корректное числовое значение')) : forFirstNumber;
+
+    const operator = prompt('Ввдите один из знаков: * / + -');
+
+    const forSecondNumber = Number(prompt('Введите число'));
+    const secondNumber = (isNaN(forSecondNumber)) ? Number(prompt('Введите корректное числовое значение')) : forSecondNumber;
+
+    if (operator === '+') {
+        const resPlus = Number(firstNumber) + Number(secondNumber);
+        alert('Ваш результат ' + resPlus);
+    } else if (operator === '-') {
+        const resMinus = Number(firstNumber) - Number(secondNumber);
+        alert('Ваш результат ' + resMinus);
+    } else if (operator === '*') {
+        const resMultiply = Number(firstNumber) * Number(secondNumber);
+        alert('Ваш результат ' + resMultiply);
+    } else if (operator === '/') {
+        const resDivide = Number(firstNumber) / Number(secondNumber);
+        alert('Ваш результат ' + resDivide);
+    } else {
+        alert('такой операции не существует')
+    }
+</script>
+</html>
